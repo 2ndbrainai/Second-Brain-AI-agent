@@ -1,4 +1,4 @@
-(X)(https://x.com/2ndBrainAIagent)
+TWITTER: https://x.com/2ndBrainAIagent
 
 # 🧠 Second Brain AI agent
 
