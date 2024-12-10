@@ -1,4 +1,4 @@
-[![](https://img.shields.io/endpoint?style=plastic&url=https%3A%2F%2Fosstrack.io%2Fjson%2Ffreshness%2Fgithub%2Fflepied%2Fsecond-brain-agent%2Fmain)](https://osstrack.io/freshness/github/flepied/second-brain-agent/main)<br/>[![](https://pbs.twimg.com/profile_images/1862771229712949249/B7NC8ARY_400x400.jpg)](https://x.com/2ndBrainAIagent)
+(X)(https://x.com/2ndBrainAIagent)
 
 # 🧠 Second Brain AI agent
 
