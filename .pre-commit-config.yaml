@@ -1,0 +1,84 @@
+---
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+fail_fast: true
+
+repos:
+
+  - repo: https://github.com/floatingpurr/sync_with_poetry
+    rev: "1.1.0"                # the revision or tag to clone at
+    hooks:
+      - id: sync_with_poetry
+        args: []                # optional args
+
+  - repo: local
+    hooks:
+      - id: pytest-check
+        name: Pytest checks
+        entry: poetry run pytest
+        language: python
+        pass_filenames: false
+        files: ".*\\.py$"
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.12.0
+    hooks:
+      - id: isort
+        args:
+          - "--profile"
+          - "black"
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.5
+    hooks:
+      - id: codespell
+        args:
+          - "--exclude-file=poetry.lock"
+
+  - repo: https://github.com/jackdewinter/pymarkdown
+    rev: v0.9.12
+    hooks:
+      - id: pymarkdown
+        args: ["-d", "md014,md013,md041,md053,md033,md011,md045", "scan"]
+
+  - repo: local
+    hooks:
+      - id: poetry-pylint
+        name: Pylint checks
+        entry: poetry run pylint
+        pass_filenames: true
+        language: system
+        files: ".*\\.py$"
+        exclude: "htmlTemplates\\.py|test.*\\.py|extractors.py"
+
+  - repo: local
+    hooks:
+      - id: poetry-check
+        name: Poetry check
+        description: run poetry check to validate config
+        entry: poetry check
+        language: python
+        pass_filenames: false
+        files: ^(.*/)?pyproject.toml$
+
+      - id: inject-chromadb-version
+        name: inject chromadb version into compose.yaml
+        entry: make compose.yaml
+        language: python
+        pass_filenames: false
+        files: ^poetry.lock$
+
+...
