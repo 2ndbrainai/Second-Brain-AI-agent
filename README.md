@@ -1,4 +1,4 @@
-[![](https://img.shields.io/endpoint?style=plastic&url=https%3A%2F%2Fosstrack.io%2Fjson%2Ffreshness%2Fgithub%2Fflepied%2Fsecond-brain-agent%2Fmain)](https://osstrack.io/freshness/github/flepied/second-brain-agent/main)<br/>[![](https://img.shields.io/badge/Incubated_by-100.builders-9146ff?logo=gamejolt&logoColor=white&labelColor=464646&style=for-the-badge)](https://app.100.builders/directory)[![](M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z)](https://vote.artizen.fund/index/second-brain-ai-agent-1692884508130x285177834121461760)
+[![](https://img.shields.io/endpoint?style=plastic&url=https%3A%2F%2Fosstrack.io%2Fjson%2Ffreshness%2Fgithub%2Fflepied%2Fsecond-brain-agent%2Fmain)](https://osstrack.io/freshness/github/flepied/second-brain-agent/main)<br/>[![](https://pbs.twimg.com/profile_images/1862771229712949249/B7NC8ARY_400x400.jpg)](https://x.com/2ndBrainAIagent)
 
 # 🧠 Second Brain AI agent
 
