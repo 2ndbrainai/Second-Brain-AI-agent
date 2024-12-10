@@ -1,0 +1,60 @@
+---
+
+name: Pull Request
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+jobs:
+
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Extract dependent Pull Requests
+        uses: depends-on/depends-on-action@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install poetry
+        run: |
+          set -ex
+          curl -sSL https://install.python-poetry.org | python3 -
+          poetry --version
+
+      - name: Install python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'poetry'
+
+      - name: Run pre-commit checks
+        run: |
+          set -ex
+          poetry install --with test
+          poetry run pip3 install torch
+          poetry run pre-commit run -a --show-diff-on-failure -v
+
+      - name: Run integration tests
+        env:
+          HUGGINGFACEHUB_API_TOKEN: ${{ secrets.HUGGINGFACEHUB_API_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          set -ex
+          ./integration-test.sh
+
+  check-all-dependencies-are-merged:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@master
+
+      - name: Check all dependent Pull Requests are merged
+        uses: depends-on/depends-on-action@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          check-unmerged-pr: true
+...
