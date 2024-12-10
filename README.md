@@ -140,10 +140,6 @@ $ streamlit run second_brain_agent.py
   Network URL: http://192.168.121.112:8502
 ```
 
-Here is an example:
-
-![Screenshot](screenshot.png "Screenshot")
-
 ## Development
 
 Install the extra dependencies using [poetry](https://python-poetry.org/):
