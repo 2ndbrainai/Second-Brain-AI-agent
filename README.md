@@ -1,4 +1,4 @@
-TWITTER: https://x.com/2ndBrainAIagent
+<a href="https://x.com/2ndBrainAIagent"><img src="https://img.shields.io/twitter/follow/2ndBrainAIagent"></a>
 
 # 🧠 Second Brain AI agent
 
