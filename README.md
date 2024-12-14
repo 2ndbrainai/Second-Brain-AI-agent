@@ -23,7 +23,7 @@ Tiago Forte's groundbreaking idea of the Second Brain has revolutionized the way
 ### ✅ Who Can Benefit?
 
 * Professionals: Streamline your workflow and find exactly what you need in seconds.
-* Students: Make study sessions more productive by quickly accessing and understanding your notes.
+* Students: Make study sessions more productive by quickly accessing and understanding your notes
 * Researchers: Dive deep into your research without getting lost in information overload.
 * Creatives: Free your creativity by organizing your thoughts and ideas effortlessly.
 
