@@ -72,7 +72,7 @@ You need a Python 3 interpreter, [`poetry`](https://github.com/python-poetry/ins
 Get the source code:
 
 ```ShellSession
-$ git clone https://github.com/flepied/second-brain-agent.git
+$ git clone https://github.com/2ndbrainai/Second-Brain-AI-agent.git
 ```
 
 Copy the example .env file and edit it to suit your settings:
