@@ -1,4 +1,4 @@
-<a href="https://x.com/2ndBrainAIagent"><img src="https://img.shields.io/twitter/follow/2ndBrainAIagent"></a>
+<a href="https://x.com/SecondBrainX"><img src="https://img.shields.io/twitter/follow/SecondBrainX"></a>
 
 # 🧠 Second Brain AI agent
 
