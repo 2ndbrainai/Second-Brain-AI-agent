@@ -14,3 +14,4 @@ compose.yaml: poetry.lock
 poetry.lock: pyproject.toml
 	poetry lock --no-update
 	touch poetry.lock
+.
